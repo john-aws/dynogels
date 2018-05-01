@@ -63,7 +63,7 @@ Currently the following region codes are available in Amazon:
 | us-west-2      | US West (Oregon)         |
 
 ### Define a Model
-Models are defined through the toplevel define method.
+Models are defined through the toplevel define method. Note that, by default, the DynamoDB table name inferred will be the lowercased and pluralized version of the name you provided when defining the model. In the example below, the model name is 'Account', so the default table name is 'accounts'.
 
 ```js
 var Account = dynogels.define('Account', {
